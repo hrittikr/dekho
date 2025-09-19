@@ -1,0 +1,5 @@
+#include<iostream>
+using namespace std;
+int main(){
+    cout<<"repository ko commit karana hai bhai"<<endl;
+} 
