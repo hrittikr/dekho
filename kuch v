@@ -1,10 +1,11 @@
 #include<iostream>
 using namespace std;
 int main(){
-    cout<<"Dekhu mai tujhe ya dekhu kudrat ke najare muskilo me hai ye dil mera"<<endl;
+    cout<<"Dekhu mai tujhe ya dekhu kudrat ke najare,muskilo me hai ye dil mera"<<endl;
 
-    for (int i = 0; i<=100; i++)
-    printf("%d I LOVE YOU \n",i);
+    for (int i = 0; i<=100;i++)
+    printf("%d I LOVE YOU 💖\n",i);
+    printf("%d aaiye na hamra bihar me \n",101);
 
     return 0;
 
