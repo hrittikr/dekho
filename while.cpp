@@ -6,7 +6,8 @@ int main()
     while(i<=5)
     
     {
-    cout<<i;i++;
+    cout<<i<<endl;
+    i++;
     }
     return 0;
 }
