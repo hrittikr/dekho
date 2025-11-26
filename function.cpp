@@ -29,6 +29,40 @@
 // }
 
 
+#include <iostream>
+using namespace std;
+void hello(){
+    cout<<"Hello World!"<<endl;
+}
+int square(int n){
+    return n*n;
+}
+int main()
+{ 
+    hello();
+    int result=square(5);
+    cout <<"square of 5 is:"<<result;
+    return 0;
+}
+
+
+
+#include <iostream>
+using namespace std;
+void hello(){
+    cout<<"hello world"<<endl;
+}
+int quad(int n){
+    return n*n*n*n*n;
+}
+int main(){
+    hello();
+    int result=quad(5);
+    cout <<"square of 5 is: "<<result;
+    return 0;
+}
+
+
 
 // #include <iostream>
 // using namespace std;
@@ -48,18 +82,20 @@
 // }
 
 
-#include <iostream>
-using namespace std;
- int add(int a, int b)
- {
-     return a+b;
- }
- int main()
- {  
-    int sum;
-    sum=add(100,80);
-    cout<<"100+80="<<sum;
-    return 0;
- }
+// #include <iostream>
+// using namespace std;
+//  int add(int a, int b)
+//  {
+//      return a+b;
+//  }
+//  int main()
+//  {  
+//     int sum ,a,b;
+//     cout<<"Enter two numbers: ";
+//     cin>>a>>b;
+//     sum=add(a,b);
+//     cout<<"a+b="<<sum;
+//     return 0;
+//  }
 
 
