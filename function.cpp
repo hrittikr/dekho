@@ -133,17 +133,29 @@
 // }
 
 //by using call by value find the area of circle.
+// #include <iostream> 
+// using namespace std;
+// void area(float r){
+//     cout<<"The area of circle is: "<<3.14*r*r<<endl;
+// } 
+// int main(){
+//     float radius = 5;
+//     area(radius);
+//     return 0;
+// }
+
 #include <iostream> 
 using namespace std;
-void area(float r){
-    cout<<"The area of circle is: "<<3.14*r*r<<endl;
+float area(float r){
+    return 3.14*r*r;
 } 
 int main(){
+    int result ;
     float radius = 5;
-    area(radius);
+    result = area(radius);
+    cout << "The area of circle is: " << area(radius) << endl;
     return 0;
 }
-
 
 
 //What is call by address:-
