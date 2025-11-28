@@ -29,38 +29,38 @@
 // }
 
 
-#include <iostream>
-using namespace std;
-void hello(){
-    cout<<"Hello World!"<<endl;
-}
-int square(int n){
-    return n*n;
-}
-int main()
-{ 
-    hello();
-    int result=square(5);
-    cout <<"square of 5 is:"<<result;
-    return 0;
-}
+// #include <iostream>
+// using namespace std;
+// void hello(){
+//     cout<<"Hello World!"<<endl;
+// }
+// int square(int n){
+//     return n*n;
+// }
+// int main()
+// { 
+//     hello();
+//     int result=square(5);
+//     cout <<"square of 5 is:"<<result;
+//     return 0;
+// }
 
 
 
-#include <iostream>
-using namespace std;
-void hello(){
-    cout<<"hello world"<<endl;
-}
-int quad(int n){
-    return n*n*n*n*n;
-}
-int main(){
-    hello();
-    int result=quad(5);
-    cout <<"square of 5 is: "<<result;
-    return 0;
-}
+// #include <iostream>
+// using namespace std;
+// void hello(){
+//     cout<<"hello world"<<endl;
+// }
+// int quad(int n){
+//     return n*n*n*n*n;
+// }
+// int main(){
+//     hello();
+//     int result=quad(5);
+//     cout <<"square of 5 is: "<<result;
+//     return 0;
+// }
 
 
 
@@ -82,6 +82,8 @@ int main(){
 // }
 
 
+
+
 // #include <iostream>
 // using namespace std;
 //  int add(int a, int b)
@@ -99,3 +101,19 @@ int main(){
 //  }
 
 
+
+
+ //write a program to display one integer and one float number using a function.
+
+#include <iostream>
+using namespace std;
+void display(int n1, float n2){
+    cout<<"The integer number is "<<n1<<endl;
+    cout<<"The float number is "<<n2<<endl;
+}
+int main(){
+    int num1 = 10;
+    float num2 = 10.5;
+    display(num1, num2);
+    return 0;
+}
