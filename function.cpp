@@ -144,18 +144,18 @@
 //     return 0;
 // }
 
-#include <iostream> 
-using namespace std;
-float area(float r){
-    return 3.14*r*r;
-} 
-int main(){
-    int result ;
-    float radius = 5;
-    result = area(radius);
-    cout << "The area of circle is: " << area(radius) << endl;
-    return 0;
-}
+// #include <iostream> 
+// using namespace std;
+// float area(float r){
+//     return 3.14*r*r;
+// } 
+// int main(){
+//     int result ;
+//     float radius = 5;
+//     result = area(radius);
+//     cout << "The area of circle is: " << area(radius) << endl;
+//     return 0;
+// }
 
 
 //What is call by address:-
@@ -179,3 +179,22 @@ int main(){
 //     cout <<"original value:"<<num<<endl;
 //     cout<<"new value:"<<num+10<<endl;
 // }
+
+
+// call by reference:-
+//same as call by address but in this we use reference operator(&) in function parameter.
+
+#include <iostream>
+using namespace std;
+void changevalue (int &p)
+{
+    p = p+10;
+    cout<<"Reference value:"<<p<<endl;
+}
+int main(){
+    int num;
+    cout<<"enter the value:";
+    cin>>num;
+    cout <<"original value:"<<num<<endl;
+    cout<<"new value:"<<num+10<<endl;
+}
