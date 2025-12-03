@@ -184,17 +184,80 @@
 // call by reference:-
 //same as call by address but in this we use reference operator(&) in function parameter.
 
+// #include <iostream>
+// using namespace std;
+// void changevalue (int &p)
+// {
+//     p = p+10;
+//     cout<<"Reference value:"<<p<<endl;
+// }
+// int main(){
+//     int num;
+//     cout<<"enter the value:";
+//     cin>>num;
+//     cout <<"original value:"<<num<<endl;
+//     cout<<"new value:"<<num+10<<endl;
+// }
+
+// write a program to swap two numbers using call by reference.
+
+// #include <iostream>
+// using namespace std;
+// void swap(int &a, int &b){
+//     int temp;
+//     temp = a;
+//     a = b;
+//     b = temp;
+
+// }
+// int main(){
+//     int num1, num2;
+//     cout<<"Enter two numbers: ";
+//     cin>>num1>>num2;
+//     swap(num1, num2);
+//     cout<<"After swapping: "<<endl;
+//     cout<<"num1: "<<num1<<endl;
+//     cout<<"num2: "<<num2<<endl;
+//     return 0;
+// }
+
+// // write a program to increase the marks of two subjects by 5 using call by reference.
 #include <iostream>
 using namespace std;
-void changevalue (int &p)
+void increasemarks(int &subj1 , int &sub2)
 {
-    p = p+10;
-    cout<<"Reference value:"<<p<<endl;
+    subj1 = subj1+5;
+    subj2 = sub2+5;
+
 }
+
 int main(){
-    int num;
-    cout<<"enter the value:";
-    cin>>num;
-    cout <<"original value:"<<num<<endl;
-    cout<<"new value:"<<num+10<<endl;
+    int marks1,marks2;
+    cout<<"enter the marks of the two subjects: ";
+    cin>>marks1>>marks2;
+    increasemarks(marks1,marks2);
+    cout<<"the new marks of the subject 1 is: "<<marks1<<endl;
+    cout<<"the nuw marks of the subject 2 is: "<<marks2<<endl;
+    return 0;
 }
+
+// write a program to find the maximum number between two numbers using call by reference.
+// #include <iostream>
+// using namespace std;
+// void maximum(int &a, int &b){
+//     if(a > b){
+//         cout<<"Maximum number is: "<<a<<endl;
+//     }
+//     else{
+//         cout<<"Maximum number is: "<<b<<endl;
+//     }
+// }
+// int main(){
+//     int num1, num2;
+//     cout<<"Enter two numbers: ";
+//     cin>>num1>>num2;
+//     maximum(num1, num2);
+//     return 0;
+// }
+
+
