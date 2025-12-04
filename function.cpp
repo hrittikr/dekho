@@ -222,24 +222,24 @@
 // }
 
 // // write a program to increase the marks of two subjects by 5 using call by reference.
-#include <iostream>
-using namespace std;
-void increasemarks(int &subj1 , int &sub2)
-{
-    subj1 = subj1+5;
-    subj2 = sub2+5;
+// #include <iostream>
+// using namespace std;
+// void increasemarks(int &subj1 , int &sub2)
+// {
+//     subj1 = subj1+5;
+//     subj2 = sub2+5;
 
-}
+// }
 
-int main(){
-    int marks1,marks2;
-    cout<<"enter the marks of the two subjects: ";
-    cin>>marks1>>marks2;
-    increasemarks(marks1,marks2);
-    cout<<"the new marks of the subject 1 is: "<<marks1<<endl;
-    cout<<"the nuw marks of the subject 2 is: "<<marks2<<endl;
-    return 0;
-}
+// int main(){
+//     int marks1,marks2;
+//     cout<<"enter the marks of the two subjects: ";
+//     cin>>marks1>>marks2;
+//     increasemarks(marks1,marks2);
+//     cout<<"the new marks of the subject 1 is: "<<marks1<<endl;
+//     cout<<"the nuw marks of the subject 2 is: "<<marks2<<endl;
+//     return 0;
+// }
 
 // write a program to find the maximum number between two numbers using call by reference.
 // #include <iostream>
@@ -261,3 +261,29 @@ int main(){
 // }
 
 
+// recursion in c++:-
+#include <iostream>
+using namespace std;
+int fact(int n){
+    if(n==0 )
+    {
+        return 1;
+    }
+    else{
+        return n*fact(n-1);
+    }   
+}
+int main(){
+    int number;
+    cout<<"Enter a number to find factorial: ";
+    cin>>number;
+    int result = fact(number);
+    cout<<"Factorial of "<<number<<" is: "<<result<<endl;
+    return 0;
+}
+
+
+// how to run in terminal:
+// g++
+// g++ function.cpp
+// .\a.exe
