@@ -262,28 +262,111 @@
 
 
 // recursion in c++:-
-#include <iostream>
-using namespace std;
-int fact(int n){
-    if(n==0 )
-    {
-        return 1;
-    }
-    else{
-        return n*fact(n-1);
-    }   
-}
-int main(){
-    int number;
-    cout<<"Enter a number to find factorial: ";
-    cin>>number;
-    int result = fact(number);
-    cout<<"Factorial of "<<number<<" is: "<<result<<endl;
-    return 0;
-}
+// #include <iostream>
+// using namespace std;
+// int fact(int n){
+//     if(n==0 )
+//     {
+//         return 1;
+//     }
+//     else{
+//         return n*fact(n-1);
+//     }   
+// }
+// int main(){
+//     int number;
+//     cout<<"Enter a number to find factorial: ";
+//     cin>>number;
+//     int result = fact(number);
+//     cout<<"Factorial of "<<number<<" is: "<<result<<endl;
+//     return 0;
+// }
 
 
 // how to run in terminal:
+
 // g++
-// g++ function.cpp
+// g++ name of the file.cpp
 // .\a.exe
+
+// simple program to print a string by using a array function.
+// simple program to print a string by using a array function.
+// #include <iostream>
+// using namespace std;
+// int main (){
+//     char hrittik[20];
+//     cout<<"Enter your name: ";
+//     cin.getline(hrittik,20);
+//     cin>>hrittik;
+//     cout<<"My Name:"<<hrittik<<endl;
+//     return 0;
+// }
+
+// string handling in c++:-
+// string length - to find the length of string.
+// string concat - to concatenate two strings.
+// string copy - to copy one string to another string.
+// string compare - to compare two strings.
+// #include <iostream>
+// using namespace std;
+// int main(){
+//     char str[20];
+//     cout<<"enter the string: ";
+//     cin.getline(str,20);
+//     cout<<"length:"<<strlen(str)<<endl;
+//     return 0;   
+// }
+
+// #include <iostream>
+// #include <cstring>
+// using namespace std;
+// int main ()
+// {
+//   char str1[5];
+//   char str2[6];
+//   cout<<"enter the str1:"<<endl;
+//   cin>>str1;
+//   cout<<"enter the str2:"<<endl;
+//   cin>>str2;
+
+//   if(strcmp(str1,str2)==0);
+  
+//   {
+//     cout<<"Both the string are equal:";
+//   }
+//   else
+//   {
+//     cout<<"both the string are not equal:";
+//   }
+//   return 0;
+
+// }
+
+// write a program in c++ to swap the 1st , 3rd and 5th letter of two names.
+#include <iostream>
+using namespace std;
+void swap(char &a, char &b){
+    char temp;
+    temp = a;
+    a = b;
+    b = temp;
+}
+int main(){
+    char name1[20], name2[20];
+    cout<<"Enter first name: ";
+    cin>>name1;
+    cout<<"Enter second name: ";
+    cin>>name2;
+
+    swap(name1[0], name2[0]);
+    swap(name1[2], name2[2]);
+    swap(name1[4], name2[4]);
+
+    cout<<"After swapping:"<<endl;
+    cout<<"First name: "<<name1<<endl;
+    cout<<"Second name: "<<name2<<endl;
+
+    return 0;
+    
+
+}
