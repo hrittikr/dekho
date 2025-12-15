@@ -342,31 +342,155 @@
 
 // }
 
+
+
 // write a program in c++ to swap the 1st , 3rd and 5th letter of two names.
+// #include <iostream>
+// using namespace std;
+// void swap(char &a, char &b){
+//     char temp;
+//     temp = a;
+//     a = b;
+//     b = temp;
+// }
+// int main(){
+//     char name1[20], name2[20];
+//     cout<<"Enter first name: ";
+//     cin>>name1;
+//     cout<<"Enter second name: ";
+//     cin>>name2;
+
+//     swap(name1[0], name2[0]);
+//     swap(name1[2], name2[2]);
+//     swap(name1[4], name2[4]);
+
+//     cout<<"After swapping:"<<endl;
+//     cout<<"First name: "<<name1<<endl;
+//     cout<<"Second name: "<<name2<<endl;
+
+//     return 0;
+// }
+
+
+
+
+// Write a program in c++ using a function to pass the arguments with return value?
+// #include <iostream>
+// using namespace std;
+
+// void sum(int n1, float n2){
+//     cout<<"The div of the number is "<<n1/n2<<endl;
+//     cout<<"The product of the number is "<<n1*n2<<endl;
+//     cout<<"The sub of the number is "<<n1-n2<<endl;
+//     cout<<"The sum of the number is "<<n1+n2;
+// }
+// int main(){
+//     int n1 =15;
+//     int n2 = 3;
+//     sum(n1,n2);
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// void sum(int n1, float n2){
+//     cout<<"the sum of the number is "<<n1+n2<<endl;
+//     return;
+// }
+// int main(){
+//     int n1=20;
+//     int n2 =6.5;
+//     sum(n1,n2);
+//     return 0;
+// }
+
+// write a program in c++ to find minimum and maximum elements of array.
+// sample input- 5
+//               12345
+
+// sample output-1 2 
+
 #include <iostream>
 using namespace std;
-void swap(char &a, char &b){
-    char temp;
-    temp = a;
-    a = b;
-    b = temp;
-}
-int main(){
-    char name1[20], name2[20];
-    cout<<"Enter first name: ";
-    cin>>name1;
-    cout<<"Enter second name: ";
-    cin>>name2;
+int main (){
+    int x;
+    int y;
+    int arr[20];
+    cout << " enter the number of elements in array: ";
+    cin>>x;
+    for(int i=1; i<=n; i++)
+    {
+        cout<<"enter the elements of array: ";
+        cin>>arr[i];
+    }
+    if{arr[0]>arr[i]}
+    {
+        y=arr[0];
+    }
+    else
+    {
+        y=arr[i];
+        }
+    }
 
-    swap(name1[0], name2[0]);
-    swap(name1[2], name2[2]);
-    swap(name1[4], name2[4]);
+    // write in c++ using string to count the vowels in a given string.
+    #include <iostream>
+    using namespace std;
 
-    cout<<"After swapping:"<<endl;
-    cout<<"First name: "<<name1<<endl;
-    cout<<"Second name: "<<name2<<endl;
+    int main(){
+        string str;
+        int count = 0;
+        cout<<"Enter a string: ";
+        getline(cin, str);
+        for(int i=0; i<str.length(); i++){
+            char ch = tolower(str[i]);
+            if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u'){
+                count++;
+            }
+        }
+        cout<<"Number of vowels in the string: "<<count<<endl;
+        return 0;
+    }
 
-    return 0;
-    
 
-}
+    // write a program in c++ using string to find the length of string, copy of string, concatation of a string.
+    #include <iostream>
+    #include <cstring>
+    using namespace std;
+    int main(){
+        char str1[20], str2[20], str3[40];
+        cout<<"Enter first string: ";
+        cin.getline(str1, 20);
+        cout<<"Enter second string: ";
+        cin.getline(str2, 20);
+
+        // Length of string
+        cout<<"Length of first string: "<<strlen(str1)<<endl;
+        cout<<"Length of second string: "<<strlen(str2)<<endl;
+
+        // Copy of string
+        strcpy(str3, str1);
+        cout<<"Copy of first string: "<<str3<<endl;
+
+        // Concatenation of strings
+        strcat(str1, str2);
+        cout<<"Concatenation of both strings: "<<str1<<endl;
+
+        return 0;
+    }
+
+    // write a program in c++ using string to print in reverse order.
+    #include <iostream>
+    #include <cstring>
+    using namespace std;
+    int main(){
+        char str[20];
+        cout<<"Enter a string: ";
+        cin.getline(str, 20);
+        cout<<"Reverse of the string: ";
+        for(int i=strlen(str)-1; i>=0; i--){
+            cout<<str[i];
+        }
+        cout<<endl;
+        return 0;
+    }
