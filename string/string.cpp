@@ -144,5 +144,25 @@ int main(){
       return 0;
     }
 
+
+    #include <iostream>
+    using namespace std;
+    int main(){
+      int n=6;
+      for(int i =0; i<6; i++){
+    
+      for(int s=0; s<6-i; s++){
+        cout<<" ";
+      }
+      for(int j=0; j<6; j++){
+        cout<<j+1 ;
+      }
+      cout<<endl;
+      }
+      return 0;
+    }
+
+
+
   
   
