@@ -73,11 +73,76 @@ int main(){
   
   
   
-  
-  
-  
-  
-  
-  
+  // write two program of string in c++
+  // compare two string are they equal or not
+  #include <iostream>
+  using namespace std;
+  int main(){
+     string s1,s2;
+     cin>>s1>>s2;
+     
+     if(s1==s2)
+     {
+       cout<<"Equal";
+     }
+     else
+     {
+       cout<<"Not Equal";
+     }
+  }
+
+  // concatenate two string
+  #include <iostream>
+  using namespace std;
+  int main(){ 
+      string s1,s2;
+      cin>>s1>>s2;
+      
+      cout<<s1+s2;
+    }
+// 2.
+  // concatenate two string
+  #include <iostream>
+    
+  using namespace std;
+  int main(){ 
+      string s1,s2;
+      cin>>s1>>s2;
+      
+      cout<<s1+s2;
+    }
+
+    // write a program in c++ whether the substring is present or not 
+    #include <iostream>
+    using namespace std;
+    int main(){
+      string s1="Hello To World";
+      string s2="To";
+      int pos = s1.find(s2);
+      int pos1 = s1.find("XYZ");
+      int pos2 = s1.find("Hello");
+      cout<<"pos";
+      
+    }
+
+
+    // pattern 
+    #include <iostream>
+    using namespace std;
+    int main(){
+      int n=6;
+      for(int i =0; i<6; i++){
+    
+      for(int s=0; s<6-i; s++){
+        cout<<" ";
+      }
+      for(int j=0; j<6; j++){
+        cout<<"* ";
+      }
+      cout<<endl;
+      }
+      return 0;
+    }
+
   
   
